@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import { ProductGrid } from '../components/product-grid'
+// import { ProductGrid } from '../components/product-grid'
 import SiciliaLogo from './public/SiciliaLogo.png'
 import Link from 'next/link'
+import { Product } from '@/components/product'
 
 export default function Home() {
   return (
@@ -21,12 +22,11 @@ export default function Home() {
       </nav>
     </div>
   </header>
-
-
       <main>
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-8">Ultimos ingresos</h2>
-          <ProductGrid />
+          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Ultimos ingresos</h2>
+          {/* <ProductGrid /> */}
+          <Product/>
         </section>
       </main>
 
